@@ -29,7 +29,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github repo](https://www.github.com/Odohofre/product-preview-component)
-- Live Site URL: [live site URL](https://odohofre.github.io/product-preview-component/index.html)
+- Live Site URL: [live site URL](https://odohofre.github.io/product-preview-component)
 
 ## My process
 
