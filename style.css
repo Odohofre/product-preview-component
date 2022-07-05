@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: hsl(30, 38%, 92%);
+  color: hsl(228, 12%, 48%);
+  height: 100vh;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h2,
+.new-price {
+  font-family: "Fraunces", serif;
+}
+
+.product {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 700px;
+  min-height: 525px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.product-image {
+  width: 100%;
+  height: 100%;
+}
+
+.product-image img {
+  max-width: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.product-review {
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+}
+
+.product-content {
+  padding: 15px 20px;
+}
+
+.product-review .product-name {
+  letter-spacing: 5px;
+  font-size: 1em;
+}
+
+.product-sub {
+  font-size: 2.4em;
+  line-height: 1em;
+  color: hsl(212, 21%, 14%);
+}
+
+.review-text {
+  font-family: inherit;
+  font-size: 1.2em;
+  line-height: 1.4em;
+  margin-bottom: 20px;
+}
+
+.price {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin: 20px 5px 50px;
+}
+
+.new-price {
+  font-size: 2.5em;
+  color: hsl(158, 36%, 37%);
+  margin-right: 25px;
+}
+
+.old-price {
+  font-size: 15px;
+  text-decoration: line-through;
+  color: hsl(228, 12%, 48%);
+  margin-left: 25px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2em;
+  font-weight: bold;
+  background-color: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+  padding: 20px 30px;
+  margin-top: 30px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: hsl(158, 36%, 21%);
+  cursor: pointer;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 468px) {
+  .product {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    width: 90vw;
+  }
+
+  .product-image {
+    height: 35%;
+  }
+
+  .product-review {
+    height: 65%;
+  }
+
+  .price {
+    margin: 5px 5px;
+  }
+
+  button {
+    padding: 15px 30px;
+    margin-top: 10px;
+  }
+}
